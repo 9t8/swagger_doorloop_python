@@ -69,7 +69,7 @@ class Person(object):
         '': ''
     }
 
-    def __init__(self, id=None, name=None, first_name=None, middle_name=None, last_name=None, gender=None, full_name=None, date_of_birth=None, timezone=None, company=None, company_name=None, job_title=None, notes=None, phones=None, emails=None, primary_address=None, picture_url=None, =None):  # noqa: E501
+    def __init__(self, id=None, name=None, first_name=None, middle_name=None, last_name=None, gender=None, full_name=None, date_of_birth=None, timezone=None, company=None, company_name=None, job_title=None, notes=None, phones=None, emails=None, primary_address=None, picture_url=None):  # noqa: E501
         """Person - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._name = None
@@ -88,7 +88,6 @@ class Person(object):
         self._emails = None
         self._primary_address = None
         self._picture_url = None
-        self._ = None
         self.discriminator = None
         if id is not None:
             self.id = id
@@ -122,8 +121,6 @@ class Person(object):
             self.primary_address = primary_address
         if picture_url is not None:
             self.picture_url = picture_url
-        if  is not None:
-            self. = 
 
     @property
     def id(self):
@@ -491,27 +488,6 @@ class Person(object):
         """
 
         self._picture_url = picture_url
-
-    @property
-    def (self):
-        """Gets the  of this Person.  # noqa: E501
-
-
-        :return: The  of this Person.  # noqa: E501
-        :rtype: object
-        """
-        return self._
-
-    @.setter
-    def (self, ):
-        """Sets the  of this Person.
-
-
-        :param : The  of this Person.  # noqa: E501
-        :type: object
-        """
-
-        self._ = 
 
     def to_dict(self):
         """Returns the model properties as a dict"""
